@@ -83,7 +83,47 @@ params = {
 }
 ```
 
+### search-assetbank.py
+This script demonstrates how to integrate with the Asset Bank API to search for images and return the search results in JSON format.
 
+```
+[
+    {
+        "id": 1,
+        "originalFilename": "Italy-_0001_Italy-Tuscany-Florence-Aerial-view-from-Santa-Maria-del-Fiore-Cathedral.jpg",
+        "fullAssetUrl": "https://example.assetbank.app/rest/assets/1",
+        "thumbnailUrl": "https://example.assetbank.app/servlet/display?file=example_thumbnail.jpg",
+        "previewUrl": "https://example.assetbank.app/servlet/display?file=example_preview.jpg",
+        "unwatermarkedLargeImageUrl": null,
+        "dateLastModifiedTimestamp": 1722442983000,
+        "approved": true,
+        "typeId": 1,
+        "typeName": "Asset",
+        "accessLevelIds": "1",
+        "displayAttributes": [
+            {
+                "label": "Title",
+                "value": "Italy-_0001_Italy-Tuscany-Florence-Aerial-view-from-Santa-Maria-del-Fiore-Cathedral"
+            }
+        ],
+        "attributes": [
+            {
+                "name": "dateAdded",
+                "value": "1722442954000"
+            },
+            {
+                "name": "dateLastModified",
+                "value": "1722442983000"
+            },
+            {
+                "name": "size",
+                "value": "434256"
+            }
+        ]
+    }
+]
+
+```
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
